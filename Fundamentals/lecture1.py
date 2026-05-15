@@ -1,92 +1,76 @@
-# concept of print function
-
-# f - string 
-
-# %%
-name = 'KULDEEP'
-AGE = 21
-salary = 3000000
-
-print(f'hii my name is {name} and my age is {AGE} and my salary is {salary}')
-# %%
- 
-# concept of .format method 
-
-print('hii my name is {} and my age is {} and my salary is {}'.format(name,AGE,salary))
-
-# Concept of List 
-
-Lst1 = []
-Lst2 = [1,2,33.3,'hii','world',True,False,[10,20,30],[100,200,300],{1,2,3},{"India":1000},None]
-
-# Control Flow 
-
-# if condition 
-# %%
-name = input("Enter your name :")
-
-if name == "kuldeep":
-    print(f'Your Name is {name}')
-
-
-# %%
-
-coin_side = input("Enter the coin side:")
-
-if coin_side.lower == "head":
-    print("you have won")
-
-if coin_side.lower == "tail":
-    print("I have won")
-else:
-    print("Enter correct value")
-
-
-# %%
-
-coin_side = input("Enter the coin side:")
-
-if coin_side == "head":
-    print("you have won")
-
-elif coin_side == "tail":
-    print("i win")
-else:
-    print("Enter correct coin side")
-
-# %%
-
-# Concept of Indexing and slicing 
-
-str = "Welcome to the world of python programming"
-str1 = "hello world"
-print(str1[6])
-# %%
-
-# str[start:stop:step]
-
-print(str1[::3])
-# %%
-
-
+# Single line Comment
 '''
-Question : write a program to print whether the value entered by user is pallendrom or not
-
-Logic: 
-1.Ask the user to enter the string
-2.Reverse the string
-3.compare the original string with the reversed string
-4.if both are the same then it is palindrome otherwise not a palindrome
-
+Multi line comment
+1.kuldeep
+2.kumar
+3.gaud
 '''
-# %%
-string = input("Enter a string:")
-string1 = string[::-1]  #str1[start:stop:step]  : --> -1 means reverse the string
+"""
+Question: Ask User to enter two numbers and do the addition of two numbers
 
-if string == string1:
-    print(f"{string} is a palindrome")
+Logic:
+1.I will ask user to enter two numbers
+2.tweo numbers will be assigned to two variables
+3. one variable : ans = variable1 + vairable2
+4.I will print the answer
 
-else:
-    print(f"{string} is not a palindrome")
+Execution:
+
+1.input() : will take user input as string and return it back to caller function (main) as a string type value data object
+2.Assign two variables with input():
+variable1 = int(input()) : here we are converting the user input into interger number (int()) so that we 
+3. Assign Variable : ans : variable1 + variable2
+4. 
+"""
+
 # %%
+# Ask the user to enter two numbers
+variable1 = int(input("Enter the first number:"))
+variable2 = int(input("Enter the second number"))
+
+ans = variable1 + variable2
+
+print(ans)
+
+print(type(ans))
+
+name = input("Enter the Name : ")
+
+print(type(name))
+
+data = float(input("enter number:"))
+data2 = float(input("enter number2:"))
+
+
+tdata = data + data2 
+
+print(tdata)
+
+print(type(tdata))
+
+
+# Data Types of pythonprogramming
+'''
+1.Integar
+2.Float
+3.String
+4.Boolean
+5.List
+6.Tuple
+7.Set
+8.Dictionary
+'''
+pi = 3.421
+
+# note : string must be inside a quotes
+name = 'India'
+
+# Multi variable assignment are allowed
+India,kuwait,America = 100,20.21,'usaa'
+
+# The boolean is always assignmed in camelcasing
+a = True
+b = False
+
+print(a and b)
 
