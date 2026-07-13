@@ -111,8 +111,8 @@ df.head()
 plt.bar(df['Embarked'],df['Pclass'],color = 'gray')
 plt.title('Bar Plot')
 plt.xlabel('Embarked')
-survived count
-Pclass
+# survived count
+# Pclass
 
 plt.ylabel('class')
 plt.show()
